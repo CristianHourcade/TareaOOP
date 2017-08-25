@@ -63,21 +63,21 @@ $presupuPremium->support_method("89");
     </tr>
     <tr>
       <th scope="row">Paginas</th>
-      <td>$ <?php $presupuBasico -> impPages()?></td>
-      <td>$ <?php $presupuNormal -> impPages()?></td>
-      <td>$ <?php $presupuPremium -> impPages()?></td>
+      <td>?php $presupuBasico -> impPages()?></td>
+      <td><?php $presupuNormal -> impPages()?></td>
+      <td><?php $presupuPremium -> impPages()?></td>
     </tr>
     <tr>
       <th scope="row">Hosting</th>
-      <td>$ <?php $presupuBasico -> impHost()?></td>
-      <td>$ <?php $presupuNormal -> impHost()?></td>
-      <td>$ <?php $presupuPremium -> impHost()?></td>
+      <td><?php $presupuBasico -> impHost()?></td>
+      <td><?php $presupuNormal -> impHost()?></td>
+      <td><?php $presupuPremium -> impHost()?></td>
     </tr>
     <tr>
       <th scope="row">Soporte</th>
-      <td>$ <?php $presupuBasico -> impSupport()?></td>
-      <td>$ <?php $presupuNormal -> impSupport()?></td>
-      <td>$ <?php $presupuPremium -> impSupport()?></td>
+      <td><?php $presupuBasico -> impSupport()?></td>
+      <td><?php $presupuNormal -> impSupport()?></td>
+      <td><?php $presupuPremium -> impSupport()?></td>
     </tr>
   </tbody>
 </table>
