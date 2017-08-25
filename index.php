@@ -63,7 +63,7 @@ $presupuPremium->support_method("89");
     </tr>
     <tr>
       <th scope="row">Paginas</th>
-      <td>?php $presupuBasico -> impPages()?></td>
+      <td><?php $presupuBasico -> impPages()?></td>
       <td><?php $presupuNormal -> impPages()?></td>
       <td><?php $presupuPremium -> impPages()?></td>
     </tr>
