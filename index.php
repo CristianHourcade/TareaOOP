@@ -1,3 +1,26 @@
+<?php
+//constructores de objetos
+include "class/presupuesto.inc";
+
+$presupuBasico=new Presupuesto;
+$presupuBasico->price_method("20");
+$presupuBasico->pages_method("Página básica");
+$presupuBasico->host_method("DonWeb");
+$presupuBasico->support_method("13");
+
+$presupuNormal=new Presupuesto;
+$presupuNormal->price_method("40");
+$presupuNormal->pages_method("Páginas normal");
+$presupuNormal->host_method("DonWeb");
+$presupuNormal->support_method("44");
+
+$presupuPremium=new Presupuesto;
+$presupuPremium->price_method("1.000");
+$presupuPremium->pages_method("Páginas con administrador de contenido");
+$presupuPremium->host_method("DonWeb");
+$presupuPremium->support_method("89");
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,27 +57,27 @@
   <tbody>
     <tr>
       <th scope="row">Precio</th>
-      <td>$</td>
-      <td>$</td>
-      <td>$</td>
+      <td>$ <?php $presupuBasico -> impPrice()?></td>
+      <td>$ <?php $presupuNormal -> impPrice()?></td>
+      <td>$ <?php $presupuPremium -> impPrice()?></td>
     </tr>
     <tr>
       <th scope="row">Paginas</th>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>$ <?php $presupuBasico -> impPages()?></td>
+      <td>$ <?php $presupuNormal -> impPages()?></td>
+      <td>$ <?php $presupuPremium -> impPages()?></td>
     </tr>
     <tr>
       <th scope="row">Hosting</th>
-      <td>.com</td>
-      <td>.com</td>
-      <td>.com</td>
+      <td>$ <?php $presupuBasico -> impHost()?></td>
+      <td>$ <?php $presupuNormal -> impHost()?></td>
+      <td>$ <?php $presupuPremium -> impHost()?></td>
     </tr>
     <tr>
       <th scope="row">Soporte</th>
-      <td>¿?</td>
-      <td>¿?</td>
-      <td>¿?</td>
+      <td>$ <?php $presupuBasico -> impSupport()?></td>
+      <td>$ <?php $presupuNormal -> impSupport()?></td>
+      <td>$ <?php $presupuPremium -> impSupport()?></td>
     </tr>
   </tbody>
 </table>
