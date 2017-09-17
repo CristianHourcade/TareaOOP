@@ -49,7 +49,7 @@ $presupuPremium->support_method("89");
   <thead>
     <tr>
       <th>#</th>
-      <th>Basico</th>
+      <th>ddadsadadada</th>
       <th>Normal</th>
       <th>Premium</th>
     </tr>
